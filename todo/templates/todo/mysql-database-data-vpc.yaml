@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-database-data-volume
+  labels:
+    io.kompose.service: mysql-database-data-volume
+spec:
+  storageClassName: ebs-sc
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
+status: {}

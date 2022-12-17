@@ -1,0 +1,15 @@
+namespace: 'default'
+environment: ''
+
+metadata: 
+  git:
+    commitId: none
+  jenkins:
+    buildTag: none
+
+deployment:
+  tag: ''
+  workers:
+    replicas: 1
+  https:
+    ssl: ''
